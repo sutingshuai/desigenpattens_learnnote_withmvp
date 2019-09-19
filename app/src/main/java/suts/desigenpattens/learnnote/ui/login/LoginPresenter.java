@@ -67,6 +67,7 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
                         }
 
                         getMvpView().hideLoading();
+
                         getMvpView().openMainActivity();
                     }
                 }, new Consumer<Throwable>() {
@@ -76,6 +77,7 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
                             return;
                         }
 
+                        getMvpView().hideLoading();
                         if (throwable instanceof ANError) {
                             ANError anError = (ANError) throwable;
                             handleApiError(anError);

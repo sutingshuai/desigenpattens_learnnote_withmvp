@@ -7,28 +7,17 @@ package suts.desigenpattens.learnnote;
 public class Test {
 
     public static void main(String[] args){
-        String numStr1 = "123456";
-        String numStr2 = "123456 ";
-        String numStr3 = " 123456";
-        String numStr4 = "123 456";
+        int s = 3;
 
-        String numStr5 = "123456a";
-        String numStr6 = "123{456";
-        String numStr7 = "";
-        String numStr8 = "1.1";
-        String numStr9 = "1.1.7";
-        String numStr10 = "1.17";
-
-        isNumber(numStr1.trim());
-        isNumber(numStr2.trim());
-        isNumber(numStr3.trim());
-        isNumber(numStr4.trim());
-        isNumber(numStr5.trim());
-        isNumber(numStr6.trim());
-        isNumber(numStr7.trim());
-        isNumber(numStr8.trim());
-        isNumber(numStr9.trim());
-        isNumber(numStr10.trim());
+        switch (s) {
+            case 0:
+            case 1:
+                System.out.println("好的");
+            case 2:
+            case 3:
+            default:
+                System.out.println("好吗");
+        }
 
     }
 
