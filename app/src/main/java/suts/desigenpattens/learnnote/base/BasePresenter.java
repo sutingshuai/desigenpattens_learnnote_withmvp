@@ -1,23 +1,19 @@
 package suts.desigenpattens.learnnote.base;
 
 import android.util.Log;
-
 import com.androidnetworking.common.ANConstants;
 import com.androidnetworking.error.ANError;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
-
 import java.net.HttpURLConnection;
-
 import javax.inject.Inject;
-
 import io.reactivex.disposables.CompositeDisposable;
-import suts.desigenpattens.learnnote.R;
 import suts.desigenpattens.learnnote.data.DataManager;
 import suts.desigenpattens.learnnote.data.network.model.ApiError;
 import suts.desigenpattens.learnnote.utils.AppConstants;
 import suts.desigenpattens.learnnote.utils.rx.SchedulerProvider;
+import suts.desigenpattens.learnnote.R;
 
 /**
  * Created by sutingshuai on 2019-08-26
