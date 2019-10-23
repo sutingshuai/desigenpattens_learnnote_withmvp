@@ -9,7 +9,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -76,4 +76,11 @@ dependencies {
 
     //stetho
     implementation 'com.facebook.stetho:stetho:1.5.1'
+
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //swipe view
+    implementation 'com.mindorks.android:placeholderview:1.0.3'
+    annotationProcessor 'com.mindorks.android:placeholderview-compiler:1.0.3'
 }

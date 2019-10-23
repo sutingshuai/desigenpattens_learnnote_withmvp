@@ -12,6 +12,10 @@ import suts.desigenpattens.learnnote.di.PerActivity;
 import suts.desigenpattens.learnnote.ui.login.LoginMvpPresenter;
 import suts.desigenpattens.learnnote.ui.login.LoginMvpView;
 import suts.desigenpattens.learnnote.ui.login.LoginPresenter;
+import suts.desigenpattens.learnnote.ui.main.MainActivity;
+import suts.desigenpattens.learnnote.ui.main.MainMvpPresenter;
+import suts.desigenpattens.learnnote.ui.main.MainMvpView;
+import suts.desigenpattens.learnnote.ui.main.MainPresenter;
 import suts.desigenpattens.learnnote.ui.splash.SplashMvpPresenter;
 import suts.desigenpattens.learnnote.ui.splash.SplashMvpView;
 import suts.desigenpattens.learnnote.ui.splash.SplashPresenter;
@@ -63,5 +67,12 @@ public class ActivityModule {
     SplashMvpPresenter<SplashMvpView> provideSplashPresenter(SplashPresenter<SplashMvpView> splashPresenter){
         return splashPresenter;
     }
+
+    @Provides
+    @PerActivity
+    MainMvpPresenter<MainMvpView> provideMainPresenter(MainPresenter<MainMvpView> mainPresenter){
+        return mainPresenter;
+    }
+
 
 }

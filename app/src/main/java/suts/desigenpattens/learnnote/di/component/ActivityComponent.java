@@ -4,6 +4,7 @@ import dagger.Component;
 import suts.desigenpattens.learnnote.di.PerActivity;
 import suts.desigenpattens.learnnote.di.module.ActivityModule;
 import suts.desigenpattens.learnnote.ui.login.LoginActivity;
+import suts.desigenpattens.learnnote.ui.main.MainActivity;
 import suts.desigenpattens.learnnote.ui.splash.SplashActivity;
 
 /**
@@ -17,4 +18,6 @@ public interface ActivityComponent {
     void inject(LoginActivity loginActivity);
 
     void inject(SplashActivity splashActivity);
+
+    void inject(MainActivity mainActivity);
 }
